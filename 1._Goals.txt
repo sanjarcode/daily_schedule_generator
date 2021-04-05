@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-04-05T15:06:55+05:30
+
+====== 1. Goals ======
+Created Monday 05 April 2021
+
+This //method// should help me generate a daily schedule, after I give it requirements in the form of a knowledge graph.
+There are 3 modes:
+1. Exploitation - Attach the given graph to the existing graph.
+2. Exploration - Give the new graph empahsis over the existing graph
+3. Auto - Select the best possible option.
+
