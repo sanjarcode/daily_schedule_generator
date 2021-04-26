@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-04-22T02:56:54+05:30
+
+====== 2. Schedule generator ======
+Created Thursday 22 April 2021
+
+=== Problem statement ===
+Given:
+1. Knowledge graph
+2. A list of available time slot(s). By default - the whole day is represented.
+3. A list of goals - there may be none. For example: the subject is a hobby.
+
+Generate a schedule.

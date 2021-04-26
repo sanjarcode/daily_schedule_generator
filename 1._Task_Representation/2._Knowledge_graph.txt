@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-04-05T15:08:43+05:30
+
+====== 2. Knowledge graph ======
+Created Monday 05 April 2021
+
+=== Goal ===
+Model dependencies. It is not responsible for the schedule.
+Each node stores:
+1. Time to learn
+2. Difficulty
+3. Importance - knowledge primarily, grade secondary.
+Note: TTL and Difficulty are measured based on the knowledge base of the student.
+
+=== Relations to model ===
+* Independence, among:
+	* Components
+	* In order of study
+* Dependence:
+	* Composition
+	* Order of study - shouldn't violate dependency, that's all.
+
+=== Hypotheses ===
+1. Children are components and their order defines study order.
+	* Advantages: Easy to implement, a topic in depth should be generally studied earlier.
+	* Disadvantages - how to show independent topics? Clubbing dependents doesn't work for truly independent topics. Answer: **Don't use order of children.** i.e. Order of children doesn't define study order or dependency. The scheduler will figure out order of study.
+	**So children define dependency/composition only.**
+2. DAG - What about shared dependencies, two nodes will connect to the same dependency, won't this be a waste of time. Yes it will be, it is better to mark the dependencies once they are done, so that the scheduler will place it in the schedule, but mark it as completed.
+	Implementation - If we connect dependencies, it will make a cycle. Yes, but it's an undirected cycle. **i.e. It's going to be a DAG.**
+	There are two scenarios - shared dependency is a common descendent or not.
+	{{./pasted_image.png}}
+
+4. Order of study - I don't think the graph needs to show this, it will be taken care of by the scheduler. By default, there's no order.
+
+=== Deciding the knowledge structure ===
+We'll be using a DAG for the knowledge map.

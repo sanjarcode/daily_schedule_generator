@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-04-06T12:37:27+05:30
+
+====== 4. Dependencies ======
+Created Tuesday 06 April 2021
+
+=== What are dependencies? ===
+Dependencies are topics you would want to know thoroughly, if you wish to understand the the main topic.
+
+=== Are dependencies absolute? ===
+Most of the time, a dependency is not fully required. There are 3 cases:
+1. Only //**a part**// of a dependency. For example - you don't need to know assembly language to learn to code. But you do need to know that all ops in a computer are move/add and that a assembly is the way to do so.
+2. We need //**more than**// the dependency. For example - you need to know about symbol table when understanding how data types and scopes are implemented, in addition to knowing that a 'compiler' exists, which is just 'told' in the first class in programming.
+3. Sometimes you need a dependency as is - To design algorithms, you need to know all of the basic data structure.
+
+=== How to represent dependencies ===
+* We can use a score, out of 10, to represent how much a dependency is required. For the case where the dependency is not sufficient, we can add upto 5 points extra. If 15 is crossed, then we need to create chunk the dependency accordingly.
+* An arrow without a score means 10/10.
+{{./pasted_image.png?width=1000}}
+
+=== What about common dependencies? ===
+* This is not a problem in a DAG.

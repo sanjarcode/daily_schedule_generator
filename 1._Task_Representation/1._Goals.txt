@@ -6,8 +6,7 @@ Creation-Date: 2021-04-05T15:06:55+05:30
 Created Monday 05 April 2021
 
 This //method// should help me generate a daily schedule, after I give it requirements in the form of a knowledge graph.
-There are 3 modes:
-1. Exploitation - Attach the given graph to the existing graph.
-2. Exploration - Give the new graph empahsis over the existing graph
-3. Auto - Select the best possible option.
-
+This graph can be taken from a senior, but it's not likely to be correct, because my interests may vary.
+See [[./course_dependency.drawio|this]]. Example
+{{./pasted_image.png?width=600}}
+{{./pasted_image002.png?width=600}}

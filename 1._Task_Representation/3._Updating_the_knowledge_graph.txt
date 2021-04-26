@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-04-05T18:12:31+05:30
+
+====== 3. Updating the knowledge graph ======
+Created Monday 05 April 2021
+
+If I bring in a new graph, the existing knowledge must update. It must do 3 things:
+1. Among the additions, what has already been studied. If everything has been studied, it must reject the update.
+2. It must add the node at the correct place, in terms of dependency. This requires the added graph to be represented in terms of the graph being added.
+	See example: We wish to add "Partition" topic to our knowledge.
+	{{./pasted_image.png?height=300}} → {{./pasted_image001.png?height=300}} → {{./pasted_image002.png?height=300}} → {{./pasted_image003.png?height=300}}
+	For multichildren addition - Traverse both trees in parallel. At each matching node, add the subtrees of the matching(in addition and existing) children to the existing map. See below for clarification.
+	{{./pasted_image004.png?height=300}}→{{./pasted_image005.png?height=300}}→{{./pasted_image006.png?height=300}}→{{./pasted_image007.png?height=300}}→{{./pasted_image008.png?height=300}}
+	Quite surprisingly, this is nothing but this is exactly the "merge" option we are presented when moving/copying files.
+	We don't need to implement this. Every file system implements this.
+3. Deletion of topic, should recalculate all nodes.
